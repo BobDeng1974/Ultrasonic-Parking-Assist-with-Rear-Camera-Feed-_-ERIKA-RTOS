@@ -1,0 +1,865 @@
+Archive member included because of file (symbol)
+
+./libee.a(ee_thact.o)         obj/code.o (EE_fp_ActivateTask)
+./libee.a(ee_intvect.o)       obj/code.o (EE_atmega_intvect)
+./libee.a(ee_hal_structs.o)   ./libee.a(ee_thact.o) (EE_IRQ_nesting_level)
+./libee.a(ee_context.o)       ./libee.a(ee_thact.o) (EE_std_run_task_code)
+./libee.a(ee_rqexchg.o)       ./libee.a(ee_thact.o) (EE_rq2stk_exchange)
+./libee.a(ee_rqinsert.o)      ./libee.a(ee_thact.o) (EE_rq_insert)
+./libee.a(ee_thendin.o)       ./libee.a(ee_context.o) (EE_thread_end_instance)
+libarduinosdk.a(wiring.o)     obj/code.o (init)
+/opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                              obj/code.o (__fixunssfsi)
+/opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                              obj/code.o (__floatunsisf)
+/opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                              /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fixunssfsi.o) (__fp_splitA)
+/opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                              /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fixunssfsi.o) (__fp_zero)
+/opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                              obj/code.o (__mulsf3)
+/opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                              /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3.o) (__mulsf3x)
+/opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                              /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3x.o) (__fp_inf)
+/opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                              /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3x.o) (__fp_nan)
+/opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                              /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3x.o) (__fp_pscA)
+/opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                              /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3x.o) (__fp_pscB)
+/opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                              /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3.o) (__fp_round)
+/opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+                              obj/code.o (__udivmodsi4)
+/opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+                              /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o (exit)
+/opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+                              obj/eecfg.o (__do_copy_data)
+/opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+                              obj/eecfg.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+disToObject         0x3               obj/task.o
+EE_resource_oldceiling
+                    0x1               obj/eecfg.o
+EE_IRQ_nesting_level
+                    0x1               ./libee.a(ee_hal_structs.o)
+duration            0x2               obj/task.o
+EE_std_endcycle_next_tid
+                    0x1               ./libee.a(ee_hal_structs.o)
+EE_th_nact          0x2               obj/eecfg.o
+Send_Data           0x3               obj/task.o
+
+Discarded input sections
+
+ .bss           0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
+ .text          0x00000000        0x0 obj/eecfg.o
+ .bss           0x00000000        0x0 obj/eecfg.o
+ .rodata.EE_resource_ceiling
+                0x00000000        0x1 obj/eecfg.o
+ .text          0x00000000        0x0 obj/code.o
+ .bss           0x00000000        0x0 obj/code.o
+ .text._Z9pin_Writehhh
+                0x00000000       0x3c obj/code.o
+ .text._Z9pin_Statehh
+                0x00000000       0x18 obj/code.o
+ .text._Z11UART_TxCharh
+                0x00000000        0xe obj/code.o
+ .text._Z12UART_clearDRv
+                0x00000000        0x6 obj/code.o
+ .text._Z16UART_printStringPc
+                0x00000000       0x18 obj/code.o
+ .text._Z11timer_startv
+                0x00000000       0x14 obj/code.o
+ .text._Z10timer_stopv
+                0x00000000        0xe obj/code.o
+ .text._Z11timer_clearv
+                0x00000000        0xa obj/code.o
+ .text._Z11get_counterv
+                0x00000000        0xa obj/code.o
+ .text._Z9U_TRIGGERhh
+                0x00000000       0x4c obj/code.o
+ .text._Z16U_GET_PULSEWIDTHhh
+                0x00000000       0xaa obj/code.o
+ .text._Z14U_GET_DISTANCEj
+                0x00000000       0x38 obj/code.o
+ .text          0x00000000        0x0 obj/task.o
+ .bss           0x00000000        0x0 obj/task.o
+ .text.pin_Dir  0x00000000       0x3c obj/task.o
+ .text.pin_State
+                0x00000000       0x18 obj/task.o
+ .text.timer_clear
+                0x00000000        0xa obj/task.o
+ .text.get_counter
+                0x00000000        0xa obj/task.o
+ .text.U_Init   0x00000000       0x40 obj/task.o
+ .text          0x00000000        0x0 obj/task2.o
+ .bss           0x00000000        0x0 obj/task2.o
+ .text.UART_init
+                0x00000000       0xf8 obj/task2.o
+ .text.UART_RxChar
+                0x00000000        0xe obj/task2.o
+ .text.UART_clearDR
+                0x00000000        0x6 obj/task2.o
+ .text.UART_printString
+                0x00000000       0x18 obj/task2.o
+ .text          0x00000000        0x0 ./libee.a(ee_thact.o)
+ .bss           0x00000000        0x0 ./libee.a(ee_thact.o)
+ .text          0x00000000        0x0 ./libee.a(ee_intvect.o)
+ .bss           0x00000000        0x0 ./libee.a(ee_intvect.o)
+ .text          0x00000000        0x0 ./libee.a(ee_hal_structs.o)
+ .bss           0x00000000        0x0 ./libee.a(ee_hal_structs.o)
+ .text          0x00000000        0x0 ./libee.a(ee_context.o)
+ .bss           0x00000000        0x0 ./libee.a(ee_context.o)
+ .text          0x00000000        0x0 ./libee.a(ee_rqexchg.o)
+ .bss           0x00000000        0x0 ./libee.a(ee_rqexchg.o)
+ .text          0x00000000        0x0 ./libee.a(ee_rqinsert.o)
+ .bss           0x00000000        0x0 ./libee.a(ee_rqinsert.o)
+ .text          0x00000000        0x0 ./libee.a(ee_thendin.o)
+ .bss           0x00000000        0x0 ./libee.a(ee_thendin.o)
+ .text          0x00000000        0x0 libarduinosdk.a(wiring.o)
+ .bss           0x00000000        0x0 libarduinosdk.a(wiring.o)
+ .text.millis   0x00000000       0x18 libarduinosdk.a(wiring.o)
+ .text.micros   0x00000000       0x46 libarduinosdk.a(wiring.o)
+ .text.delay    0x00000000       0x4c libarduinosdk.a(wiring.o)
+ .text.delayMicroseconds
+                0x00000000       0x16 libarduinosdk.a(wiring.o)
+ .text          0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .bss           0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .text          0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .bss           0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .text          0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .bss           0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .text          0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .bss           0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .text          0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .bss           0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .text          0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .bss           0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .text          0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .bss           0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .text          0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .bss           0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .text          0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .bss           0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .text          0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .bss           0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .text          0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .bss           0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .text          0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text          0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
+LOAD obj/eecfg.o
+LOAD obj/code.o
+LOAD obj/task.o
+LOAD obj/task2.o
+LOAD ./libee.a
+LOAD libarduinosdk.a
+LOAD /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a
+START GROUP
+LOAD /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a
+LOAD /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a
+LOAD /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a
+END GROUP
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xa7a
+ *(.vectors)
+ .vectors       0x00000000       0x68 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *(.progmem*)
+                0x00000068                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000068                __ctors_start = .
+ *(.ctors)
+                0x00000068                __ctors_end = .
+                0x00000068                __dtors_start = .
+ *(.dtors)
+                0x00000068                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000068        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
+                0x00000068                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000068        0xc /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000074       0x16 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+                0x00000074                __do_copy_data
+ .init4         0x0000008a       0x10 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+                0x0000008a                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000009a        0x8 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
+ *(.init9)
+ *(.text)
+ .text          0x000000a2        0x4 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
+                0x000000a2                __vector_22
+                0x000000a2                __vector_1
+                0x000000a2                __vector_24
+                0x000000a2                __vector_12
+                0x000000a2                __bad_interrupt
+                0x000000a2                __vector_6
+                0x000000a2                __vector_3
+                0x000000a2                __vector_23
+                0x000000a2                __vector_25
+                0x000000a2                __vector_11
+                0x000000a2                __vector_13
+                0x000000a2                __vector_17
+                0x000000a2                __vector_19
+                0x000000a2                __vector_7
+                0x000000a2                __vector_5
+                0x000000a2                __vector_4
+                0x000000a2                __vector_9
+                0x000000a2                __vector_2
+                0x000000a2                __vector_21
+                0x000000a2                __vector_15
+                0x000000a2                __vector_8
+                0x000000a2                __vector_14
+                0x000000a2                __vector_10
+                0x000000a2                __vector_18
+                0x000000a2                __vector_20
+                0x000000a6                . = ALIGN (0x2)
+ *(.text.*)
+ .text._Z7pin_Dirhhc
+                0x000000a6       0x3c obj/code.o
+                0x000000a6                _Z7pin_Dirhhc
+ .text._Z9UART_initmjhh
+                0x000000e2       0xf8 obj/code.o
+                0x000000e2                _Z9UART_initmjhh
+ .text._Z11UART_RxCharv
+                0x000001da        0xe obj/code.o
+                0x000001da                _Z11UART_RxCharv
+ .text._Z6U_Inithhhh
+                0x000001e8       0x40 obj/code.o
+                0x000001e8                _Z6U_Inithhhh
+ .text.loop     0x00000228       0x24 obj/code.o
+                0x00000228                loop
+ .text.setup    0x0000024c       0x3e obj/code.o
+                0x0000024c                setup
+ .text.startup.main
+                0x0000028a       0x20 obj/code.o
+                0x0000028a                main
+ .text.pin_Write
+                0x000002aa       0x3c obj/task.o
+                0x000002aa                pin_Write
+ .text.timer_start
+                0x000002e6       0x14 obj/task.o
+                0x000002e6                timer_start
+ .text.timer_stop
+                0x000002fa        0xe obj/task.o
+                0x000002fa                timer_stop
+ .text.U_TRIGGER
+                0x00000308       0x4c obj/task.o
+                0x00000308                U_TRIGGER
+ .text.U_GET_PULSEWIDTH
+                0x00000354       0xaa obj/task.o
+                0x00000354                U_GET_PULSEWIDTH
+ .text.U_GET_DISTANCE
+                0x000003fe       0x38 obj/task.o
+                0x000003fe                U_GET_DISTANCE
+ .text.FuncMeasureDistance
+                0x00000436       0xce obj/task.o
+                0x00000436                FuncMeasureDistance
+ .text.UART_TxChar
+                0x00000504        0xe obj/task2.o
+                0x00000504                UART_TxChar
+ .text.FuncSend
+                0x00000512       0x46 obj/task2.o
+                0x00000512                FuncSend
+ .text.EE_fp_ActivateTask
+                0x00000558       0x76 ./libee.a(ee_thact.o)
+                0x00000558                EE_fp_ActivateTask
+ .text.DUMMY_vect
+                0x000005ce        0x4 ./libee.a(ee_intvect.o)
+                0x000005ce                tag_DUMMY_vect
+                0x000005ce                DUMMY_vect
+ .text.EE_atmega_intvect
+                0x000005d2        0x4 ./libee.a(ee_intvect.o)
+                0x000005d2                EE_atmega_intvect
+ .text.EE_std_run_task_code
+                0x000005d6       0x24 ./libee.a(ee_context.o)
+                0x000005d6                EE_std_run_task_code
+ .text.EE_rq2stk_exchange
+                0x000005fa       0x22 ./libee.a(ee_rqexchg.o)
+                0x000005fa                EE_rq2stk_exchange
+ .text.EE_rq_insert
+                0x0000061c       0x5a ./libee.a(ee_rqinsert.o)
+                0x0000061c                EE_rq_insert
+ .text.EE_thread_end_instance
+                0x00000676       0x78 ./libee.a(ee_thendin.o)
+                0x00000676                EE_thread_end_instance
+ .text.__vector_16
+                0x000006ee       0x94 libarduinosdk.a(wiring.o)
+                0x000006ee                __vector_16
+ .text.init     0x00000782       0x76 libarduinosdk.a(wiring.o)
+                0x00000782                init
+ .text.avr-libc.fplib
+                0x000007f8       0x58 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                0x000007f8                __fixunssfsi
+ .text.avr-libc.fplib
+                0x00000850       0x7a /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                0x00000850                __floatunsisf
+                0x00000854                __floatsisf
+ .text.avr-libc.fplib
+                0x000008ca       0x44 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                0x000008ca                __fp_split3
+                0x000008da                __fp_splitA
+ .text.avr-libc.fplib
+                0x0000090e        0xe /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                0x0000090e                __fp_zero
+                0x00000910                __fp_szero
+ .text.avr-libc.fplib
+                0x0000091c        0x4 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                0x0000091c                __mulsf3
+ .text.avr-libc.fplib
+                0x00000920       0xc2 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                0x00000934                __mulsf3x
+                0x00000938                __mulsf3_pse
+ .text.avr-libc.fplib
+                0x000009e2        0xc /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                0x000009e2                __fp_inf
+ .text.avr-libc.fplib
+                0x000009ee        0x6 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                0x000009ee                __fp_nan
+ .text.avr-libc.fplib
+                0x000009f4        0xe /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                0x000009f4                __fp_pscA
+ .text.avr-libc.fplib
+                0x00000a02        0xe /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                0x00000a02                __fp_pscB
+ .text.avr-libc.fplib
+                0x00000a10       0x22 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                0x00000a10                __fp_round
+ .text.libgcc.div
+                0x00000a32       0x44 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+                0x00000a32                __udivmodsi4
+                0x00000a76                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000a76        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+                0x00000a76                exit
+                0x00000a76                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000a76        0x4 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000a7a                _etext = .
+
+.data           0x00800100        0xc load address 0x00000a7a
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
+ .data          0x00800100        0x0 obj/eecfg.o
+ .data          0x00800100        0x0 obj/code.o
+ .data          0x00800100        0x0 obj/task.o
+ .data          0x00800100        0x0 obj/task2.o
+ .data          0x00800100        0x0 ./libee.a(ee_thact.o)
+ .data          0x00800100        0x0 ./libee.a(ee_intvect.o)
+ .data          0x00800100        0x0 ./libee.a(ee_hal_structs.o)
+ .data          0x00800100        0x0 ./libee.a(ee_context.o)
+ .data          0x00800100        0x0 ./libee.a(ee_rqexchg.o)
+ .data          0x00800100        0x0 ./libee.a(ee_rqinsert.o)
+ .data          0x00800100        0x0 ./libee.a(ee_thendin.o)
+ .data          0x00800100        0x0 libarduinosdk.a(wiring.o)
+ .data          0x00800100        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .data          0x00800100        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .data          0x00800100        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .data          0x00800100        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .data          0x00800100        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .data          0x00800100        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .data          0x00800100        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .data          0x00800100        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .data          0x00800100        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .data          0x00800100        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .data          0x00800100        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .data          0x00800100        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x00800100        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .data          0x00800100        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .data          0x00800100        0x0 /opt/case/compilers/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ *(.data*)
+ .data.EE_rqfirst
+                0x00800100        0x1 obj/eecfg.o
+                0x00800100                EE_rqfirst
+ .data.EE_stkfirst
+                0x00800101        0x1 obj/eecfg.o
+                0x00800101                EE_stkfirst
+ .data.EE_th_next
+                0x00800102        0x2 obj/eecfg.o
+                0x00800102                EE_th_next
+ *(.rodata)
+ *(.rodata*)
+ .rodata.EE_th_dispatch_prio
+                0x00800104        0x2 obj/eecfg.o
+                0x00800104                EE_th_dispatch_prio
+ .rodata.EE_th_ready_prio
+                0x00800106        0x2 obj/eecfg.o
+                0x00800106                EE_th_ready_prio
+ .rodata.EE_hal_thread_body
+                0x00800108        0x4 obj/eecfg.o
+                0x00800108                EE_hal_thread_body
+ *(.gnu.linkonce.d*)
+                0x0080010c                . = ALIGN (0x2)
+                0x0080010c                _edata = .
+                0x0080010c                PROVIDE (__data_end, .)
+
+.bss            0x0080010c       0x1a
+                0x0080010c                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.EE_sys_ceiling
+                0x0080010c        0x1 obj/eecfg.o
+                0x0080010c                EE_sys_ceiling
+ .bss.command   0x0080010d        0x1 obj/code.o
+                0x0080010d                command
+ .bss.distance  0x0080010e        0x2 obj/code.o
+                0x0080010e                distance
+ .bss.timer0_fract
+                0x00800110        0x1 libarduinosdk.a(wiring.o)
+ .bss.timer0_millis
+                0x00800111        0x4 libarduinosdk.a(wiring.o)
+                0x00800111                timer0_millis
+ .bss.timer0_overflow_count
+                0x00800115        0x4 libarduinosdk.a(wiring.o)
+                0x00800115                timer0_overflow_count
+ *(COMMON)
+ COMMON         0x00800119        0x3 obj/eecfg.o
+                0x00800119                EE_resource_oldceiling
+                0x0080011a                EE_th_nact
+ COMMON         0x0080011c        0x8 obj/task.o
+                0x0080011c                disToObject
+                0x0080011f                duration
+                0x00800121                Send_Data
+ COMMON         0x00800124        0x2 ./libee.a(ee_hal_structs.o)
+                0x00800124                EE_IRQ_nesting_level
+                0x00800125                EE_std_endcycle_next_tid
+                0x00800126                PROVIDE (__bss_end, .)
+                0x00000a7a                __data_load_start = LOADADDR (.data)
+                0x00000a86                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800126        0x0
+                0x00800126                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800126                PROVIDE (__noinit_end, .)
+                0x00800126                _end = .
+                0x00800126                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 obj/eecfg.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000000       0x31 obj/code.o
+ .comment       0x00000000       0x31 obj/task.o
+ .comment       0x00000000       0x31 obj/task2.o
+ .comment       0x00000000       0x31 ./libee.a(ee_thact.o)
+ .comment       0x00000000       0x31 ./libee.a(ee_intvect.o)
+ .comment       0x00000000       0x31 ./libee.a(ee_hal_structs.o)
+ .comment       0x00000000       0x31 ./libee.a(ee_context.o)
+ .comment       0x00000000       0x31 ./libee.a(ee_rqexchg.o)
+ .comment       0x00000000       0x31 ./libee.a(ee_rqinsert.o)
+ .comment       0x00000000       0x31 ./libee.a(ee_thendin.o)
+ .comment       0x00000000       0x31 libarduinosdk.a(wiring.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x2b0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x18 obj/eecfg.o
+ .debug_aranges
+                0x00000018       0xb0 obj/code.o
+ .debug_aranges
+                0x000000c8       0x78 obj/task.o
+ .debug_aranges
+                0x00000140       0x48 obj/task2.o
+ .debug_aranges
+                0x00000188       0x20 ./libee.a(ee_thact.o)
+ .debug_aranges
+                0x000001a8       0x28 ./libee.a(ee_intvect.o)
+ .debug_aranges
+                0x000001d0       0x18 ./libee.a(ee_hal_structs.o)
+ .debug_aranges
+                0x000001e8       0x20 ./libee.a(ee_context.o)
+ .debug_aranges
+                0x00000208       0x20 ./libee.a(ee_rqexchg.o)
+ .debug_aranges
+                0x00000228       0x20 ./libee.a(ee_rqinsert.o)
+ .debug_aranges
+                0x00000248       0x20 ./libee.a(ee_thendin.o)
+ .debug_aranges
+                0x00000268       0x48 libarduinosdk.a(wiring.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x2444
+ *(.debug_info)
+ .debug_info    0x00000000      0x1af obj/eecfg.o
+ .debug_info    0x000001af      0xa41 obj/code.o
+ .debug_info    0x00000bf0      0x790 obj/task.o
+ .debug_info    0x00001380      0x23b obj/task2.o
+ .debug_info    0x000015bb      0x398 ./libee.a(ee_thact.o)
+ .debug_info    0x00001953      0x10d ./libee.a(ee_intvect.o)
+ .debug_info    0x00001a60       0xdf ./libee.a(ee_hal_structs.o)
+ .debug_info    0x00001b3f      0x1d9 ./libee.a(ee_context.o)
+ .debug_info    0x00001d18      0x10d ./libee.a(ee_rqexchg.o)
+ .debug_info    0x00001e25      0x14b ./libee.a(ee_rqinsert.o)
+ .debug_info    0x00001f70      0x220 ./libee.a(ee_thendin.o)
+ .debug_info    0x00002190      0x2b4 libarduinosdk.a(wiring.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0xe30
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x6d obj/eecfg.o
+ .debug_abbrev  0x0000006d      0x366 obj/code.o
+ .debug_abbrev  0x000003d3      0x24b obj/task.o
+ .debug_abbrev  0x0000061e      0x135 obj/task2.o
+ .debug_abbrev  0x00000753      0x19c ./libee.a(ee_thact.o)
+ .debug_abbrev  0x000008ef       0x6e ./libee.a(ee_intvect.o)
+ .debug_abbrev  0x0000095d       0x61 ./libee.a(ee_hal_structs.o)
+ .debug_abbrev  0x000009be       0xf8 ./libee.a(ee_context.o)
+ .debug_abbrev  0x00000ab6       0x81 ./libee.a(ee_rqexchg.o)
+ .debug_abbrev  0x00000b37       0xa4 ./libee.a(ee_rqinsert.o)
+ .debug_abbrev  0x00000bdb      0x123 ./libee.a(ee_thendin.o)
+ .debug_abbrev  0x00000cfe      0x132 libarduinosdk.a(wiring.o)
+
+.debug_line     0x00000000     0x13f3
+ *(.debug_line)
+ .debug_line    0x00000000       0x9c obj/eecfg.o
+ .debug_line    0x0000009c      0x4ac obj/code.o
+ .debug_line    0x00000548      0x235 obj/task.o
+ .debug_line    0x0000077d      0x107 obj/task2.o
+ .debug_line    0x00000884      0x1d8 ./libee.a(ee_thact.o)
+ .debug_line    0x00000a5c      0x152 ./libee.a(ee_intvect.o)
+ .debug_line    0x00000bae      0x10c ./libee.a(ee_hal_structs.o)
+ .debug_line    0x00000cba      0x179 ./libee.a(ee_context.o)
+ .debug_line    0x00000e33      0x13e ./libee.a(ee_rqexchg.o)
+ .debug_line    0x00000f71      0x14e ./libee.a(ee_rqinsert.o)
+ .debug_line    0x000010bf      0x189 ./libee.a(ee_thendin.o)
+ .debug_line    0x00001248      0x1ab libarduinosdk.a(wiring.o)
+
+.debug_frame    0x00000000      0x500
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x1a8 obj/code.o
+ .debug_frame   0x000001a8      0x11c obj/task.o
+ .debug_frame   0x000002c4       0x88 obj/task2.o
+ .debug_frame   0x0000034c       0x34 ./libee.a(ee_thact.o)
+ .debug_frame   0x00000380       0x34 ./libee.a(ee_intvect.o)
+ .debug_frame   0x000003b4       0x24 ./libee.a(ee_context.o)
+ .debug_frame   0x000003d8       0x24 ./libee.a(ee_rqexchg.o)
+ .debug_frame   0x000003fc       0x24 ./libee.a(ee_rqinsert.o)
+ .debug_frame   0x00000420       0x24 ./libee.a(ee_thendin.o)
+ .debug_frame   0x00000444       0xbc libarduinosdk.a(wiring.o)
+
+.debug_str      0x00000000      0xaa3
+ *(.debug_str)
+ .debug_str     0x00000000      0x192 obj/eecfg.o
+                                0x1c6 (size before relaxing)
+ .debug_str     0x00000192      0x43c obj/code.o
+                                0x4f5 (size before relaxing)
+ .debug_str     0x000005ce       0x5c obj/task.o
+                                0x24c (size before relaxing)
+ .debug_str     0x0000062a       0x3c obj/task2.o
+                                0x1bf (size before relaxing)
+ .debug_str     0x00000666      0x19a ./libee.a(ee_thact.o)
+                                0x2f6 (size before relaxing)
+ .debug_str     0x00000800       0x4b ./libee.a(ee_intvect.o)
+                                0x184 (size before relaxing)
+ .debug_str     0x0000084b       0x3d ./libee.a(ee_hal_structs.o)
+                                0x164 (size before relaxing)
+ .debug_str     0x00000888       0x62 ./libee.a(ee_context.o)
+                                0x1fe (size before relaxing)
+ .debug_str     0x000008ea       0x3d ./libee.a(ee_rqexchg.o)
+                                0x177 (size before relaxing)
+ .debug_str     0x00000927       0x39 ./libee.a(ee_rqinsert.o)
+                                0x183 (size before relaxing)
+ .debug_str     0x00000960       0x95 ./libee.a(ee_thendin.o)
+                                0x243 (size before relaxing)
+ .debug_str     0x000009f5       0xae libarduinosdk.a(wiring.o)
+                                0x19b (size before relaxing)
+
+.debug_loc      0x00000000     0x126e
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x776 obj/code.o
+ .debug_loc     0x00000776      0x653 obj/task.o
+ .debug_loc     0x00000dc9      0x12a obj/task2.o
+ .debug_loc     0x00000ef3       0xc4 ./libee.a(ee_thact.o)
+ .debug_loc     0x00000fb7       0x21 ./libee.a(ee_context.o)
+ .debug_loc     0x00000fd8       0x6b ./libee.a(ee_rqinsert.o)
+ .debug_loc     0x00001043      0x22b libarduinosdk.a(wiring.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x1e0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0xa0 obj/code.o
+ .debug_ranges  0x000000a0       0x68 obj/task.o
+ .debug_ranges  0x00000108       0x38 obj/task2.o
+ .debug_ranges  0x00000140       0x10 ./libee.a(ee_thact.o)
+ .debug_ranges  0x00000150       0x18 ./libee.a(ee_intvect.o)
+ .debug_ranges  0x00000168       0x10 ./libee.a(ee_context.o)
+ .debug_ranges  0x00000178       0x10 ./libee.a(ee_rqexchg.o)
+ .debug_ranges  0x00000188       0x10 ./libee.a(ee_rqinsert.o)
+ .debug_ranges  0x00000198       0x10 ./libee.a(ee_thendin.o)
+ .debug_ranges  0x000001a8       0x38 libarduinosdk.a(wiring.o)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(arduino.elf elf32-avr)
+LOAD linker stubs

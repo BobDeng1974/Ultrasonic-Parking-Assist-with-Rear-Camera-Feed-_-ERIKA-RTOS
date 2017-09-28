@@ -1,0 +1,4 @@
+This files lists the description of Task 2: using a buzzer with the ultrasonic sensor.
+
+The task is simple. The buzzer frequency is inversely proportional to the ultrasonic detected range.
+There is only one task file in the project containing all the implementation, the whole code is in AVR C.

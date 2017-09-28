@@ -1,0 +1,157 @@
+This file lists description for the files inside the project.
+NOTE: The files themselves contain detailed description of each functionality built in the code.
+
+# Avr_DIO.h #
+# Avr_DIO.c #
+
+These two files contain the atmega328 GPIO drivers. Three functions are implemented: Pin Write, Pin State(read), and Pin Direction.
+Besides, MACROS for setting, clearing and toggling the pins have been implemented alongside constant defeintions for the base addresses
+of the microcontroller ports.
+----------------
+This file is to describe how the "DIO"
+code works.
+1-   Avr_DIO.h
+--------------------
+      In this file we introduce the functions prototypes that will
+      be implemented and the macros used.
+      Definition of  input and output as macros: 
+          #include input   	0 
+          #include output 	1
+      Definition of Ports BASE addresses which are the 
+      addresses of register PINx:
+          #define   B		0x23
+          #define   C		0x26
+          #define   D		0x29
+      Includes of the files needed to serve the Avr_DIO.c
+      File:
+         #include		 "stdint.h"
+--------------------------------------------------------------------------------------
+2-  Avr_DIO.c
+--------------------
+     In this file we implement the functions that we need, we 
+     give the user the ability to call functions giving them the 
+     name of the port they want to use, which pin  they want
+     to use and the pin value or direction.
+     EXAMPLE:
+          if user wants to activate port B PB1 all they have to 
+          do is to just call the functions and provide them with
+          the letter "B", PB1 and the direction -either using the
+          word "input" or "output"- or the data value -either 1 or
+          0.
+      In each microcontroller we can, from the datasheet, 
+      notice some relation between control and status registers
+      of the a port and the data registers. for example, in our 
+      chip ATMEGA 328p- pu the state register "PINx" has the
+      port base address and if we increment the address by one
+      we reach the direction register of the port "DDRx" and if we 
+      increment the address by one  we reach the data register 
+      "PORTX". In PIC microcontrollers we find that The data
+      register has the base address and if we or it with 0x80 we
+      obtain the address of the direction register.  
+                   -------------------------------------------------------
+Overview on functions: 
+-------------------------------
+      To set a certain pin direction to input or output we have
+      the function "pin_Dir( PortName, PinDesired, output/input)"
+      To  write some value -logic 1 or 0- we have the function
+      called "pin_Write( PortName, PinDesired,  1/0)".
+      To read the pin state we can use the function 
+      "pin_State( PortName, PinDesired)"
+	  --------------------------------------------------------
+Functions Implementation:
+------------------------------------
+     1- pin_Dir( PortName, PinDesired, output/input):
+         We take the PortBaseAddress which is the address
+         of PINx register and increment it by 1 so we now 
+         have the address of the DDR register. then we
+         type-cast the address and dereference it in the line: 
+         (*((volatile unsigned char*)(port+1))) 
+         Now, based on the desired direction (input or output)
+         we can call the macros SET_BIT and  CLEAR_BIT 
+         which take a register to write in and a pin to either set
+         to one or to clear.
+		-------------------------------
+     2- pin_Write( PortName, PinDesired, 0/1):
+         As stated  in the "pin_Dir" description we here take a 
+         port base address and increment it by 2 to access the 
+         data register and then set the desired pin to the desired
+         value.
+		-------------------------------
+     3- pin_State( PortName, PinDesired)
+         Similarly, but here we use the base address since we 
+         want  to deal with the PINx register itself this time. 
+         we read the desired pin status which returns either a 0 
+         or non 0 value which refers that the pin is HIGH.
+
+# UART_lib.h #
+
+Overview:
+--------------
+Here we introduce a library for Universal Asynchronous Receiver/Transmitter "UART" communication
+protocol.
+
+We introduce some very handy functions here to Initialize the UART,  Use it to receive data,transmit 
+data in various sizes.
+In the UART_init( BaudRate, DataFrameLength, StopBits, ParityMode ), first we enable the user to 
+enter the BaudRate by which they want their device to send or receive. Then the user enters the size
+of data they wish to send or receive. Afterwards the user defines the sent/received frame shape by 
+setting the desired number of stopbits and choosing the parity mode whether they want to have even
+parity check, odd parity check or no parity check at all.
+In the Uart_RxChar() function we use the control and status register of  UART in AVR 
+called "RXC0" which has a bit called " UDRE0 " on which we poll to make sure that the buffer/data
+register is not empty so that we can read data and if the pin is set then we can read data.
+In the Uart_TxChar(unsigned char c) function we use the status register "UCSR0A" and check on the 
+bit called  "UCSR0A" to poll on the data register to know whether it is full or not so  that we could
+put data in it or wait.
+	---------------------------------------------------------------------------------------------------
+Implementation:
+----------------------
+UART_init():
+     Here we First set the data frame using our three pins UCSZ00, UCSZ01 and UCSZ02 in registers
+     UCSR0C and UCSR0B respectively to configure the number of bits to be sent, 
+     000 for 5 bits, 001 for 6, 010 for 7, 011 for 8 and 111 for 9.
+     Then the baudrate which is the speed of sending/receiving on which both  communication devices 
+     should agree in order to send/receive data correctly is calculated using the formula of AVR 
+     microcontrollers and the result which is too big to be held in one eight-bit register is put in the 
+     UBBR0L register which holds the Least signifcant 8 bits of number then the number gets shifted by 
+     8 so that we have the upper 8 most significant bits now in the  Least significant bits of the register
+     and we store them in the UBBR0H which holds the most significant eight-bits of the number.
+
+# TimerAVR.h #
+# TimerAVR.c #
+These files contain the required functions to control Timer1 which is used in the ultrasonic application. Four functions are implemented:
+Timer Start, Timer Stop, Timer Clear, Get Timer Counter. An ISR has been implemented to later use interrupts in calculating the width of a signal.
+
+Implementation:
+---------------------
+void timer_start()
+	Starts 16-bit timer1 with 1/8 prescaler and resets the counter register to start counting from zero.
+
+void timer_stop()
+	Stops the timer by clearing the control registers and clear the counter register.
+
+void clear_timer()
+	Clears the counter register only so the timer restarts counting from zero again.
+
+uint16_t get_counter()
+	Returns the current value in the counter register.
+
+# Ultrasonic.h #
+# Ultrasonic.c #
+These files contain the driver built for the ultrasonic HC-SR04 sensor, it contains functions for Initialization, Triggering, Measuring ECHO signal
+width, and Distance Calculation.
+
+Implementation:
+---------------------
+void U_INIT(uint16_t E_PORT, uint16_t ECHO, uint16_t T_PORT, uint16_t TRIGGER)
+	Initialize the sensor by defining the ports and the pins for ECHO and Trigger.
+
+void U_TRIGGER()
+	Starts the sensor function by clearing the TRIGGER, then setting it to HIGH for 10 microseconds before clearing it again.
+
+uint16_t U_GET_PULSEWIDTH()
+	Calculates the ECHO signal width by starting a timer on the rising edge of ECHO and stopping that timer on the falling edge
+	and getting the timer counter.
+	
+uint16_t U_GET_DISTANCE(uint16_t duration)
+	Takes the width of the signal to calculate the distance of the detected object and returns the distance in cm.

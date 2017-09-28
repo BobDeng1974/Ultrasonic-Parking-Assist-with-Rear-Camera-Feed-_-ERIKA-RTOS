@@ -1,0 +1,6 @@
+This file lists description of Task 1.
+
+The task objective was to port ERIKA OS to Arduino UNO and build a simple blinking LED application.
+Then, a more complex application was to be built, so both PIR and Ultrasonic sensors have been interfaced
+with the board using the simplified Arduino C. The external library of the ultrasonic sensor couldn't be
+imported successfully so the necessary functions were written from scratch.
